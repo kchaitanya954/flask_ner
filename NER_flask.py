@@ -14,7 +14,7 @@ Markdown(app)
 def index():
     return render_template('index.html')
 # method to render ner and to display it
-@app.route('/', methods=["GET", "POST"])
+@app.route('/flask_ner', methods=["GET", "POST"])
 def extract():
     if request.method == 'POST':
         if request.form['submit_button'] == 'NER Submit':
